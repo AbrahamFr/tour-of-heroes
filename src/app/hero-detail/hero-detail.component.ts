@@ -11,7 +11,7 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./hero-detail.component.scss']
 })
 export class HeroDetailComponent implements OnInit {
-  hero: Hero;
+  @Input() hero: Hero;
 
   constructor(
     private route: ActivatedRoute,
